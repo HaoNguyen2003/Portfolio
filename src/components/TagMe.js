@@ -14,7 +14,7 @@ extend({ MeshLineGeometry, MeshLineMaterial });
 
 
 const GLTF_PATH = '/3D.glb';
-const TEXTURE_PATH = '/Tinghow.png';
+const TEXTURE_PATH = '/Tinghow1.png';
 
 useGLTF.preload(GLTF_PATH);
 useTexture.preload(TEXTURE_PATH);

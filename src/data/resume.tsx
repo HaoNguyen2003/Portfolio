@@ -217,7 +217,7 @@ export const DATA = {
       description:
         "A portfolio is basically your proof of work—it shows what you’ve done, what you’re good at, and why people should trust you. No matter what you do—tech, design, marketing, or anything else—having a solid portfolio helps you stand out and get noticed!",
       image:
-        "/hireme1.jpg",
+        "/hireme6.jpg",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
     },
@@ -228,7 +228,7 @@ export const DATA = {
       description:
         "I can help you build a custom web application, whether it’s a simple landing page or a complex system with advanced features. Whatever your requirements, I’ll make sure it’s functional, user-friendly, and optimized for performance.",
       image:
-        "/hireme2.jpg",
+        "/hireme10.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
     },

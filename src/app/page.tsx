@@ -9,8 +9,9 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { ComputersCanvas,StarsCanvas } from "@/components/MyCanvas";
 
-const BLUR_FADE_DELAY = 0.04;
+const BLUR_FADE_DELAY = 0.03;
 
 export default function Page() {
   return (
@@ -32,6 +33,7 @@ export default function Page() {
                 text={DATA.description}
               />
             </div>
+            
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
@@ -132,6 +134,7 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
+          
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
             {DATA.projects.map((project, id) => (
               <BlurFade
@@ -165,12 +168,18 @@ export default function Page() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   I like building things
                 </h2>
+                
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   If you&apos;re looking for a coder who doesn’t just smash the keyboard but actually turns your ideas into smooth, user-friendly software—congrats, you’ve found the right person! 🚀
                 </p>
               </div>
             </div>
+            
           </BlurFade>
+         
+           <BlurFade delay={BLUR_FADE_DELAY * 13}><ComputersCanvas /></BlurFade>
+                
+              
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
               {DATA.hackathons.map((project, id) => (
@@ -190,6 +199,7 @@ export default function Page() {
               ))}
             </ul>
           </BlurFade>
+
         </div>
       </section>
       <section id="contact">
